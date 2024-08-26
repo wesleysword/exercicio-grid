@@ -1,0 +1,74 @@
+.container {
+    background-color: #f7f7f7;
+    max-width: 900px;
+    display: grid;
+    grid-template-areas: "video-destaque propaganda"
+        "video-destaque videos-sugeridos";
+    grid-template-columns: 1fr 270px;
+    grid-template-rows: 56px 1fr;
+    gap: 20px;
+    padding: 35px;
+}
+
+.video-destaque {
+    grid-area: video-destaque;
+}
+
+.video-destaque img {
+    margin-bottom: 12px;
+    width: 100%;
+}
+
+.video-destaque .titulo {
+    font-style: 18px;
+    margin-bottom: 7px;
+
+}
+
+.video-destaque .visualizacoes {
+    font-style: 14px;
+    margin-bottom: 7px;
+}
+
+.propaganda {
+    grid-area: propaganda;
+}
+
+.videos-sugeridos {
+    grid-area: videos-sugeridos;
+}
+
+.videos-sugeridos .video {
+    display: flex;
+    gap: 5px;
+    margin-bottom: 15px;
+}
+
+.videos-sugeridos .video .titulo {
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+
+.videos-sugeridos .video p {
+    font-style: 11px;
+    margin-bottom: 5px;
+}
+
+
+
+
+
+
+
+
+
+
+/* 
+objetivo: imitar o layout do youtube
+passo 1: o vídeo em destaque ficar a esquerda e com uma proporção maior -----
+passo 2: a propaganda ficar na direita -----
+passo 3: os vídeos com as informações ficarem na direita -----
+passo 4: aplicar fontes e tamanhos -----
+passo 5: aplicar um "propaganda" ao placeholder de propaganda 
+passo 6: colocar o conteudo do vídeo ao lado direito do vídeo
+*/
